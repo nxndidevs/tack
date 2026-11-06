@@ -34,8 +34,8 @@ public sealed class BoardZoneTests
     }
 
     [Theory]
-    [InlineData(RevealReason.Edge, false, false, true)]
-    [InlineData(RevealReason.Edge, true, false, true)]
+    [InlineData(RevealReason.Edge, false, false, false)]
+    [InlineData(RevealReason.Edge, true, false, false)]
     [InlineData(RevealReason.New, false, false, true)]
     [InlineData(RevealReason.New, true, false, false)]
     [InlineData(RevealReason.Hotkey, false, false, false)]
