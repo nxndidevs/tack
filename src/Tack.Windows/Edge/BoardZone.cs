@@ -49,7 +49,7 @@ internal static class BoardZone
         }
         var byReason = view.Reason switch
         {
-            RevealReason.Edge => true,
+            RevealReason.Edge => false,
             RevealReason.New => !view.Snipping,
             _ => false,
         };
